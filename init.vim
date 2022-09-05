@@ -24,3 +24,4 @@ source ~/.config/nvim/setting/cocconf.vim
 source ~/.config/nvim/setting/gtags.vim
 source ~/.config/nvim/setting/gtags-cscope.vim
 source ~/.config/nvim/setting/DoxygenToolkit.vim
+set noexpandtab

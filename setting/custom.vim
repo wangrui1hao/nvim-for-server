@@ -1,19 +1,3 @@
-"==========================================
-" Author:  cloudguan
-" Version: 9.1
-" Email: rcloudguan@163.com
-" Sections:
-"       -> Initial Plugin 加载插件
-"       -> General Settings 基础设置
-"       -> Display Settings 展示/排版等界面格式设置
-"       -> FileEncode Settings 文件编码设置
-"       -> Others 其它配置
-"       -> HotKey Settings  自定义快捷键
-"       -> FileType Settings  针对文件类型的设置
-"       -> Theme Settings  主题设置
-"
-"==========================================
-
 "设置leader 按键 
 let mapleader=','
 let g:mapleader=','
@@ -63,6 +47,7 @@ filetype indent on
 " set shiftwidth=4
 " 让 vim 把连续数量的空格视为一个制表符
 set softtabstop=4
+" set noexpandtab
 
 "行号  
 set number
@@ -89,7 +74,12 @@ let GtagsCscope_Auto_Load = 1
 let CtagsCscope_Auto_Map = 1
 let GtagsCscope_Quiet = 1
 
-:nnoremap <expr><C-f> ':Gtags -ir .*'. expand("<cword>").'.*<Left><Left>'
+let g:go_auto_type_info = 1
+set updatetime=100
+noremap <M-S-r> :GoRun<cr>
+
+nnoremap <expr><M-S-s> ':Gtags -ir .*'. expand("<cword>").'.*<Left><Left>'
+nnoremap <expr><C-f> ':Gtags -ig .*'. expand("<cword>").'.*<Left><Left>'
 
 noremap <C-M-Left> <C-o>    
 noremap <C-M-Right> <C-i>    
