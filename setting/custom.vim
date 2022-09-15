@@ -76,9 +76,15 @@ let GtagsCscope_Quiet = 1
 
 let g:go_auto_type_info = 1
 set updatetime=100
-noremap <M-S-r> :GoRun<cr>
+noremap <expr><M-S-r> ':GoRename<cr>'
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+let g:go_rename_command = 'gopls'
+set rtp+=$HOME/go/src/golang.org/x/lint/misc/vim
+nnoremap <expr><M-S-l> ':execute "Lint" \| cw<cr>'
+"autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 
-nnoremap <expr><M-S-s> ':Gtags -ir .*'. expand("<cword>").'.*<Left><Left>'
+nnoremap <expr><M-S-s> ':Gtags -is .*'. expand("<cword>").'.*<Left><Left>'
 nnoremap <expr><C-f> ':Gtags -ig .*'. expand("<cword>").'.*<Left><Left>'
 
 noremap <C-M-Left> <C-o>    
