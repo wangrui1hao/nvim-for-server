@@ -74,15 +74,21 @@ let GtagsCscope_Auto_Load = 1
 let CtagsCscope_Auto_Map = 1
 let GtagsCscope_Quiet = 1
 
+" Rainbow CSV相关
+let g:disable_rainbow_key_mappings = 1
+let g:rcsv_max_columns = 100
+
 let g:go_auto_type_info = 1
 set updatetime=100
 noremap <expr><M-S-r> ':GoRename<cr>'
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 let g:go_rename_command = 'gopls'
+let g:go_metalinter_command = "golangci-lint"
+let g:go_jump_to_error = 0
+"let g:go_metalinter_enabled = ['errcheck', 'vet']
 set rtp+=$HOME/go/src/golang.org/x/lint/misc/vim
 nnoremap <expr><M-S-l> ':execute "Lint" \| cw<cr>'
-"autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 
 nnoremap <expr><M-S-s> ':Gtags -is .*'. expand("<cword>").'.*<Left><Left>'
 nnoremap <expr><C-f> ':Gtags -ig .*'. expand("<cword>").'.*<Left><Left>'

@@ -14,6 +14,8 @@ Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 "hight light
 Plug 'sheerun/vim-polyglot'
+" Rainbow CSV 高亮插件
+Plug 'mechatroner/rainbow_csv'
 
 call plug#end()
 

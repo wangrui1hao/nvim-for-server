@@ -15,20 +15,17 @@ set updatetime=300
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+" Recently vim can merge signcolumn and number column into one
+set signcolumn=number
 
 " GoTo code navigation.
+nmap <silent> <M-f> <Plug>(coc-implementation)
 nmap <silent> <M-g> <Plug>(coc-definition)
 nmap <silent> <F12> <Plug>(coc-definition)
 nmap <silent> <M-t> <Plug>(coc-type-definition)
 nmap <silent> <M-S-f> <Plug>(coc-references)
+
+noremap <expr><M-S-e> ':CocDiagnostics<cr>'
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
