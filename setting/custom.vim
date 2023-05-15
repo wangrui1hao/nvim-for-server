@@ -9,6 +9,10 @@ endif
 
 "开启语法高亮
 syntax on
+"扩大一下匹配内存
+set mmp=10000
+
+map <F4> :if exists("g:syntax_on") <Bar> syntax off <Bar> else <Bar> syntax enable <Bar> endif <CR>
 "NOTE: 以下配置有详细说明，一些特性不喜欢可以直接注解掉
 
 "==========================================
@@ -78,6 +82,8 @@ let GtagsCscope_Quiet = 1
 " Rainbow CSV相关
 let g:disable_rainbow_key_mappings = 1
 let g:rcsv_max_columns = 100
+nnoremap <expr><F7> ':RainbowDelim<cr>'
+nnoremap <expr><F8> ':NoRainbowDelim<cr>'
 
 let g:go_auto_type_info = 1
 set updatetime=100
