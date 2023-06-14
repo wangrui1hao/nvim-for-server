@@ -1,4 +1,4 @@
-"设置leader 按键 
+"SvnLog设置leader 按键 
 let mapleader=','
 let g:mapleader=','
 
@@ -100,10 +100,10 @@ nnoremap <expr><M-S-l> ':execute "Lint" \| cw<cr>'
 nnoremap <expr><M-S-s> ':Gtags -is .*'. expand("<cword>").'.*<Left><Left>'
 nnoremap <expr><C-f> ':Gtags -ig .*'. expand("<cword>").'.*<Left><Left>'
 
-noremap <C-M-Left> <C-o>    
-noremap <C-M-Right> <C-i>    
-noremap <M-c> :close<cr>    
-noremap <C-Up> <C-w>k    
-noremap <C-Down> <C-w>j    
-noremap <C-Left> <C-w>h    
+noremap <C-M-Left> <C-o>
+noremap <C-M-Right> <C-i>
+noremap <M-c> :bd<cr>
+noremap <C-Up> <C-w>k
+noremap <C-Down> <C-w>j
+noremap <C-Left> <C-w>h
 noremap <C-Right> <C-w>l
