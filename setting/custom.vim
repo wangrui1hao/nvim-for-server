@@ -56,6 +56,10 @@ set softtabstop=4
 
 "行号  
 set number
+let g:set_number=1
+map <F3> :if (g:set_number==1) <Bar> let g:set_number=0 <Bar> set nonumber <Bar> else <Bar> let g:set_number=1 <Bar> set number <Bar> endif <CR>
+
+
 " 取消换行
 set nowrap
 " 括号配对情况, 跳转并高亮一下匹配的括号
@@ -72,8 +76,8 @@ hi Search cterm=NONE ctermfg=yellow ctermbg=NONE gui=NONE guifg=#FFFF00 guibg=NO
 hi IncSearch cterm=NONE ctermfg=yellow ctermbg=NONE gui=NONE guifg=#FFFF00 guibg=NONE
 hi QuickFixLine cterm=NONE ctermfg=yellow ctermbg=NONE gui=NONE guifg=#FFFF00 guibg=NONE
 
-set cscopetag " 使用 cscope 作为 tags 命令
-set cscopeprg='gtags-cscope' " 使用 gtags-cscope 代替 cscope
+"set cscopetag " 使用 cscope 作为 tags 命令
+"set cscopeprg='gtags-cscope' " 使用 gtags-cscope 代替 cscope
 
 let GtagsCscope_Auto_Load = 1
 let CtagsCscope_Auto_Map = 1
