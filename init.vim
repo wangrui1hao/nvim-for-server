@@ -11,7 +11,8 @@ Plug 'morhetz/gruvbox'
 Plug 'Shougo/defx.nvim'
 Plug 'fatih/vim-go'
 "coc.vim yyds !!!!
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "hight light
 Plug 'sheerun/vim-polyglot'
 " Rainbow CSV 高亮插件

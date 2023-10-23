@@ -1,11 +1,10 @@
 {
   "languageserver": {
-      "golang": {
-        "args": ["-remote=unix;/tmp/gopls-3f0153-daemon.ruiwang"],
-        "command": "gopls",
-        "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
-        "filetypes": ["go"]
-      }
-  },
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/16.0.2/clangd_16.0.2/bin/clangd"
+    "go": {
+      "command": "gopls",
+      "args": ["-remote=unix;/tmp/gopls-3f0153-daemon.ruiwang"],
+      "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  }
 }
