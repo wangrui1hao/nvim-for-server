@@ -21,10 +21,10 @@ set signcolumn=number
 " GoTo code navigation.
 nmap <silent> <M-f> <Plug>(coc-implementation)
 nmap <silent> <M-g> <Plug>(coc-definition)
-nmap <silent> <F12> <Plug>(coc-definition)
+nmap <silent> <F12> <M-g>
 nmap <silent> <M-t> <Plug>(coc-type-definition)
 nmap <silent> <M-S-f> <Plug>(coc-references)
-
+nmap <silent> <M-S-r> <Plug>(coc-rename)
 noremap <expr><M-S-e> ':CocDiagnostics<cr>'
 
 " Highlight the symbol and its references when holding the cursor.

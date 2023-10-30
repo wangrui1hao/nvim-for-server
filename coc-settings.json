@@ -1,8 +1,8 @@
 {
   "languageserver": {
-    "go": {
+    "golang": {
       "command": "gopls",
-      "args": ["-remote=unix;/tmp/gopls-02e631-daemon.ruiwang"],
+      "args": ["-remote=unix;/tmp/gopls-3256c2-daemon.ruiwang"],
       "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
       "filetypes": ["go"]
     }

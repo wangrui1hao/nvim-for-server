@@ -11,7 +11,6 @@ Plug 'morhetz/gruvbox'
 Plug 'Shougo/defx.nvim'
 Plug 'fatih/vim-go'
 "coc.vim yyds !!!!
-" Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "hight light
 Plug 'sheerun/vim-polyglot'
@@ -25,5 +24,4 @@ source ~/.config/nvim/setting/leaderf.vim
 source ~/.config/nvim/setting/defx.vim
 source ~/.config/nvim/setting/cocconf.vim
 source ~/.config/nvim/setting/gtags.vim
-"source ~/.config/nvim/setting/gtags-cscope.vim
 source ~/.config/nvim/setting/svn.vim
