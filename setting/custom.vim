@@ -31,8 +31,6 @@ filetype plugin on
 " backspace 生效
 set backspace=eol,start,indent
 
-"ettings 文件编码,格式
-
 " 设置新文件的编码为 UTF-8
 set encoding=utf-8
 
