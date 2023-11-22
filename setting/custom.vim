@@ -89,9 +89,7 @@ let g:rcsv_max_columns = 100
 nnoremap <expr><F7> ':RainbowDelim<cr>'
 nnoremap <expr><F8> ':NoRainbowDelim<cr>'
 
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-let g:go_rename_command = 'gopls'
+" vim-go 相关
 let g:go_auto_type_info = 1
 let g:go_jump_to_error = 0
 set updatetime=100
