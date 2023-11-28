@@ -15,6 +15,7 @@ let g:Lf_WindowPosition = 'popup'
 let g:Lf_ShowRelativePath = 1
 let g:Lf_DefaultMode = 'Fuzzy'
 let g:Lf_PreviewInPopup = 1
+let g:Lf_FollowLinks = 1
 
 let g:Lf_WildIgnore = {
     \ 'dir': ['.svn','.git','.hg','github.com','golang.org','google.golang.org','pkg','applog'],
