@@ -106,3 +106,9 @@ noremap <C-Up> <C-w>k
 noremap <C-Down> <C-w>j
 noremap <C-Left> <C-w>h
 noremap <C-Right> <C-w>l
+
+" 折叠相关
+set foldmethod=syntax
+set foldlevel=999
+noremap <M-q> :if (&foldlevel==999) <Bar> set foldlevel=0 <Bar> else <Bar> set foldlevel=999 <Bar> endif <CR>
+noremap <M-w> za
